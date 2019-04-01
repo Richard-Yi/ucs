@@ -1,4 +1,4 @@
-package com.fingard.rhf.ucs.web;
+package com.ric.studio.ucs.web;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
