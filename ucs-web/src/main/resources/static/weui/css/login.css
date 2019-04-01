@@ -1,0 +1,201 @@
+.login {
+    min-height: 100%;
+    background: #fff;
+}
+
+.login .weui-cells_form {
+    margin: 0 44px;
+}
+.login .weui-cells:before {
+    border: none;
+}
+.login .weui-cells:after {
+    border-color: #E9E8E8;
+}
+.login .weui-cell:before {
+    border-color: #E9E8E8;
+    left: 0;
+}
+.login .weui-cell {
+    padding: 36px 0 2px;
+}
+.login .weui-label {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 9px;
+}
+.login .weui-label img {
+    width: 25px;
+    height: 25px;
+}
+.login .weui-input,
+.login .weui-cell__bd {
+    font-size: 14px;
+    color: #4a4a4a;
+}
+
+.login input::-webkit-input-placeholder{
+    color: #D8D8D8;
+}
+.login .weui-agree__text {
+    color: #7F7B7B;
+    font-size: 14px;
+}
+.login .weui-agree {
+    padding: 16px 36px;
+    text-align: right;
+    line-height: 16px;
+}
+.my-btn.weui-btn {
+    background: #33C38E;
+    border-radius: 32px;
+    height: 48px;
+    line-height: 48px;
+    color: #fff;
+    border: none;
+}
+.my-btn.weui-btn_disabled {
+    background: #9B9B9B;
+}
+.login-btn-wrap {
+    padding: 0 30px;
+}
+.my-btn.weui-btn:after {
+    border: none;
+}
+.opereate-wrap {
+    color: #33C38E;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 16px 36px 0;
+}
+.opereate-wrap .weui-flex__item:nth-of-type(2) {
+    text-align: right;
+}
+
+.mg-top-45 {
+    margin-top: 45px;
+}
+.login .weui-vcode-btn,
+.signup .weui-vcode-btn {
+    color: #38BF8A;
+    font-size: 16px;
+    border-left: none;
+    height: 25px;
+    line-height: 25px;
+    padding: 0;
+}
+.weui-btn_primary:not(.weui-btn_disabled):active {
+    background: #33C38E;
+}
+
+/* verifyPhone.html start */
+.vcode-info {
+    background: #f5f5f5;
+    height: 44px;
+    line-height: 44px;
+    color: #999;
+    font-size: 14px;
+    padding-left: 15px;
+}
+.signup {
+    background: #fff;
+}
+.signup .weui-cells {
+    margin-top: 0;
+}
+.signup .weui-cell {
+    padding: 29px 36px 12px;
+}
+.signup .weui-cells:after {
+    left: 36px;
+    right: 36px;
+}
+.signup .weui-input {
+    font-size: 16px;
+    height: 22px;
+    line-height: 22px;
+    color: #4a4a4a;
+}
+.signup input::-webkit-input-placeholder{
+    color: #D8D8D8;
+}
+.signup .weui-cell:before {
+    left: 36px;
+    right: 36px;
+}
+.signup .my-btn.weui-btn_disabled {
+    background: #c8c8c8;
+}
+.area-code {
+    padding-right: 31px;
+    display: inline-block;
+    font-size: 16px;
+    color: #343434;
+    font-weight: bold;
+}
+.area-code-cell div {
+    height: 22px;
+    line-height: 22px;
+}
+.weui-cell_select-before .weui-cell__hd:after {
+    border-color: #d8d8d8;
+}
+.weui-cell_select-before .weui-cell__hd:before {
+    border-color: #4a4a4a;
+    border-width: 1px 1px 0 0;
+}
+/* verifyPhone.html end */
+
+/* countryPick.html start */
+.index-list-body {
+    background: #fff;
+}
+.index-list .weui-cells__title {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding-left: 38px;
+    margin-top: 0;
+    padding-top: 14px;
+    margin-bottom: 2px;
+}
+.index-list .weui-cell:before {
+    border: none;
+}
+.index-list .weui-cells:after,
+.index-list .weui-cells:before {
+    border: none;
+}
+.index-list .weui-cell {
+    line-height: 20px;
+    padding: 12px 38px;
+    color: #212121;
+    font-size: 14px;
+}
+.index-list .weui-cell__hd {
+    width: 124px;
+
+}
+.active-cell.weui-cell,
+.active-cell .weui-cell__ft {
+    color: #39C08C;
+}
+.index-list-wrap {
+    position: relative;
+}
+.index-list-bar {
+    position: fixed;
+    right: 15px;
+    top: 20px;
+    width: 20px;
+    color: #9f9f9f;
+    font-size: 14px;
+    z-index: 9;
+}
+.index-list-bar a {
+    display: block;
+    text-align: center;
+}
+/* countryPick.html end */

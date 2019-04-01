@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <script type="text/javascript" th:src="@{/js/jquery.min.js}"></script>
+    <link th:href="@{/weui/css/weui.css}" rel="stylesheet"/>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1,user-scalable=0"/>
+    <title>唯一流水号生成测试</title>
+</head>
+<body>
+
+<div class="page">
+    <div class="page__hd" style="margin-left: 10px">
+        <h1 class="page__title">
+            唯一流水号生成测试
+        </h1>
+    </div>
+    <div class="page__bd">
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><code class="weui-code">EnterpriseNum</code></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" id="EnterpriseNum" name="EnterpriseNum" />
+                </div>
+            </div>
+
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><code class="weui-code">bankCode</code></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" id="bankCode" name="bankCode"  />
+                </div>
+            </div>
+
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><code class="weui-code">productId</code></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" id="productId" name="productId"  />
+                </div>
+            </div>
+
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><code class="weui-code">nodeId</code></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" id="nodeId" name="nodeId"  />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="weui-btn-area">
+        <a href="javascript:void(0)" class="weui-btn weui-btn_primary" onclick="generate()">生成流水号</a>
+    </div>
+
+    <div class="page__bd">
+        <div class="weui-cells__title">生成流水号</div>
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" id="info" name="info"  />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page__bd">
+        <div class="weui-cells__title">解析流水</div>
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><code class="weui-code">billNo</code></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" id="billNo1" name="billNo1"/>
+                </div>
+                <div class="weui-cell__hd"><code class="weui-code">bankCode</code></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" id="bankCode1" name="bankCode1"/>
+                </div>
+            </div>
+            <div class="weui-btn-area">
+                <a href="javascript:void(0)" class="weui-btn weui-btn_primary" onclick="parseEnt()">获取企业编号</a>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <!--表单正文-->
+                    <input class="weui-input" type="text" id="entNum" name="entNum"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page__bd">
+        <div class="weui-cells__title">解析流水</div>
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><code class="weui-code">billNo</code></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" id="billNo2" name="billNo2"/>
+                </div>
+                <div class="weui-cell__hd"><code class="weui-code">bankCode</code></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" id="bankCode2" name="bankCode2"/>
+                </div>
+            </div>
+            <div class="weui-btn-area">
+                <a href="javascript:void(0)" class="weui-btn weui-btn_primary" onclick="parse()">解析</a>
+            </div>
+            <div class="weui-cells__title">解析结果</div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <!--表单正文-->
+                    <textarea class="weui-textarea" placeholder="" rows="5"
+                              name="content" id="content"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+<script type="text/javascript">
+    function generate() {
+        $.ajax({
+            type: "post",
+            data: {
+                enterpriseNum : $('#EnterpriseNum').val(),
+                bankCode : $('#bankCode').val(),
+                productId : $('#productId').val(),
+                nodeId : $('#nodeId').val()
+            },
+            url: "/ucstest/getBillNo",
+            success: function (result) {//以json返回openResult
+                $('#info').val(result.message)
+            },
+            error: function(e){
+
+            }
+        });
+    }
+
+    function parseEnt() {
+        $.ajax({
+            type: "post",
+            data: {
+                billNo : $('#billNo1').val(),
+                bankCode : $('#bankCode1').val()
+            },
+            url: "/ucstest/getEntNum",
+            success: function (result) {//以json返回openResult
+                $('#entNum').val(result.message)
+            },
+            error: function(e){
+
+            }
+        });
+    }
+
+    function parse() {
+        $.ajax({
+            type: "post",
+            data: {
+                billNo : $('#billNo2').val(),
+                bankCode : $('#bankCode2').val()
+            },
+            url: "/ucstest/parse",
+            success: function (result) {//以json返回openResult
+                $('#content').val(result.message)
+            },
+            error: function(e){
+
+            }
+        });
+    }
+</script>
+</body>
+</html>

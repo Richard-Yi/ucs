@@ -1,0 +1,158 @@
+.payment-head {
+    padding-top: 10px;
+}
+.payment-head .payment-card {
+    padding-top: 20px;
+    margin-top: 0;
+}
+.payment-card {
+    margin: 10px;
+    padding: 0 15px 7px;
+    background: #fff;
+    box-shadow: 0 1px 2px 0 rgba(64,67,69,0.06);
+}
+.payment-head .weui-cell {
+    padding: 6px 0 0;
+}
+.payment-img {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+}
+.payment-total {
+    font-size: 24px;
+    color: #FB715F;
+    line-height: 40px;
+}
+.payment-total span {
+    font-size: 18px;
+}
+.payment-head h4 {
+    margin-top: 20px;
+    height: 21px;
+    line-height: 21px;
+    font-size: 15px;
+    color: #333;
+    font-weight: normal;
+}
+.payment-head h5 {
+    margin-top: 9px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #999;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.payment-card .weui-cell{
+    padding: 0;
+}
+.payment-card-title {
+    line-height: 22px;
+    padding: 14px 0;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    position: relative;
+}
+.payment-card-title:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    color: #E8E9EB;
+    z-index: 2;
+    bottom: 0;
+    border-top: 1px solid #e5e5e5;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+}
+.payment-card-body {
+    font-size: 15px;
+    padding-top: 8px;
+}
+.payment-card-body .weui-cell__bd {
+    color: #666;
+}
+.payment-card-body .weui-cell__ft {
+    color: #999;
+}
+.payment-card-body .weui-cell {
+    line-height: 21px;
+    padding: 8px 0;
+}
+.payment-card-body .weui-cell:before {
+    border: none;
+}
+.payment-card-sub {
+    margin-top: 2px;
+    color: #999;
+    font-size: 13px;
+    line-height: 18px;
+}
+.payment-card .weui-cells {
+    margin-top: 0;
+}
+.payment-card .weui-cells:before {
+    border: none;
+}
+.payment-card-body-small.payment-card-body {
+    padding-top: 0;
+}
+.payment-card-body-small.payment-card-body .weui-cell {
+    padding: 9px 0 10px;
+}
+.payment-card-body-small.payment-card-body .weui-cell:before {
+    border-top: 1px dotted #E8E9EB;
+    left: 0;
+}
+.payment-card-body .weui-cells {
+    font-size: 15px;
+}
+.no-border .weui-cell:before {
+    border: none !important;
+}
+.no-border {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.payment-color {
+     color: #FB715F;
+}
+.payment-footer {
+    font-size: 15px;
+    color: #333;
+    line-height: 21px;
+    padding: 12px 0 5px;
+    text-align: right;
+}
+.payment-footer .payment-color {
+    font-size: 16px;
+}
+.payment-bottom {
+    padding: 14px 5px;
+    margin: 10px 0 0;
+}
+.payment-bottom .weui-btn {
+    padding: 12px 0;
+    margin: 0 5px;
+    font-size: 15px;
+    line-height: 21px;
+    border-radius: 2px;
+}
+.payment-share-btn {
+    color: #15BF98;
+}
+.payment-now-btn {
+    background: #15BF98;
+}
+.payment-share-btn.weui-btn:after {
+    border: 1px solid #15BF98;
+    border-radius: 4px;
+}
+.payment-now-btn.weui-btn:after {
+    border: 1px solid #15BF98;
+    border-radius: 4px;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <script type="text/javascript" th:src="@{/js/jquery.min.js}"></script>
+    <link th:href="@{/weui/css/weui.css}" rel="stylesheet"/>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1,user-scalable=0"/>
+    <title>唯一流水号生成并发测试</title>
+</head>
+<body>
+
+<div class="page">
+    <div class="page__hd" style="margin-left: 10px">
+        <h1 class="page__title">
+            唯一流水号生成并发测试
+        </h1>
+    </div>
+    <div class="page__bd">
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><code class="weui-code">EnterpriseNum</code></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" id="EnterpriseNum" name="EnterpriseNum" />
+                </div>
+            </div>
+
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><code class="weui-code">bankCode</code></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" id="bankCode" name="bankCode"  />
+                </div>
+            </div>
+
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><code class="weui-code">productId</code></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" id="productId" name="productId"  />
+                </div>
+            </div>
+
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><code class="weui-code">nodeId</code></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" id="nodeId" name="nodeId"  />
+                </div>
+            </div>
+
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><code class="weui-code">并发线程数(最高支持1024，如需更高并发请联系开发修改)</code></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" id="threadNum" name="threadNum"  />
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="weui-btn-area">
+        <a href="javascript:void(0)" class="weui-btn weui-btn_primary" onclick="test()">生成流水号</a>
+    </div>
+    <div class="page__bd">
+        <div class="weui-cells__title">生成流水号</div>
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <!--表单正文-->
+                    <textarea class="weui-textarea" placeholder="" rows="100"
+                              name="info" id="info" readonly="readonly"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function test() {
+        $.ajax({
+            type: "post",
+            data: {
+                enterpriseNum : $('#EnterpriseNum').val(),
+                bankCode : $('#bankCode').val(),
+                productId : $('#productId').val(),
+                nodeId : $('#nodeId').val(),
+                threadNum: $('#threadNum').val()
+            },
+            url: "/ucstest/concurrentTest",
+            success: function (result) {//以json返回openResult
+                $('#info').val(result)
+            },
+            error: function(e){
+
+            }
+        });
+    }
+
+</script>
+</body>
+</html>

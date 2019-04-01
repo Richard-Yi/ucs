@@ -1,0 +1,154 @@
+body {
+    font-size: 14px;
+}
+
+/* 对话框 start */
+.weui-dialog {
+    border-radius: 12px;
+}
+
+.weui-dialog__hd {
+    padding-top: 20px;
+}
+
+.weui-dialog__title {
+    font-size: 18px;
+    color: #212121;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+.weui-dialog__ft {
+    line-height: 44px;
+}
+
+.weui-dialog__btn {
+    color: #0C72D4;
+    font-size: 18px;
+}
+
+.weui-dialog__btn_confirm {
+    font-weight: bold;
+}
+
+.weui-dialog__bd {
+    min-height: 0;
+    padding: 0 1.6em 16px;
+}
+
+/* 对话框 start */
+
+/* 清除浮动 start */
+.clearfix:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+/* 清除浮动 end */
+
+/* 消息提示框 start */
+.weui-toast {
+    width: 200px;
+    min-height: 0;
+    color: #fff;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 15px 18px;
+    border-radius: 10px;
+    background: #000;
+    opacity: 0.6;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 0;
+    box-sizing: border-box;
+}
+
+.weui-toast__content {
+    margin: 0;
+}
+
+/* 消息提示框 end */
+
+
+/* 按钮 start */
+.my-btn.weui-btn {
+    background: #33C38E;
+    border-radius: 32px;
+    height: 48px;
+    line-height: 48px;
+    color: #fff;
+    border: none;
+}
+.my-btn-medium {
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    background: #33C38E;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+/* 按钮 end */
+
+
+/* 下拉刷新 start */
+#pullDown,
+#pullUp {
+    background: #fff;
+    height: 40px;
+    line-height: 40px;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    font-size: 14px;
+    color: #888;
+    text-align: center;
+}
+
+/* 下拉刷新 end */
+
+/* 底部tab切换 start */
+html, body {
+    height: 100%;
+}
+
+/* 底部tab切换 end */
+
+
+/* 无数据时显示风格 */
+.cashrec-no-data {
+    background: #fff;
+    position: relative;
+}
+.cashrec-no-data-icon {
+    height: 70px;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cashrec-no-data-icon img {
+    width: 108px;
+    height: 70px;
+}
+
+.cashrec-no-data-info {
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* 无数据时显示风格 end */

@@ -1,0 +1,327 @@
+/* user.html start */
+.user {
+    background: #fff;
+}
+.user-header.weui-media-box_appmsg .weui-media-box__hd {
+    background: #fff;
+    border-radius: 50%;
+}
+.user-header .weui-media-box__title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.user-header .weui-media-box__desc {
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+}
+.user-header.weui-cell_access .weui-cell__ft:after {
+    width: 12px;
+    height: 12px;
+    border-color: #fff;
+}
+.user-access .weui-cell__hd {
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+}
+.user-access .weui-cell__hd img {
+    width: 28px;
+    height: 28px;
+}
+.user-access .weui-cell {
+    padding: 12px 16px;
+}
+.user-access .weui-cell__bd p {
+    line-height: 28px;
+    font-size: 18px;
+    color: #4A4A4A;
+}
+.user-access.weui-cell_access .weui-cell__ft:after {
+    border-color: #D6D6D6;
+}
+.user-list {
+    background: #f5f5f5;
+}
+.user-list li {
+    margin-bottom: 8px;
+    background: #fff;
+    line-height: 28px;
+    /*height: 48px;*/
+    /*background: yellow;*/
+}
+.user-list .weui-cell__ft {
+    font-size: 16px;
+    color: #4A4A4A;
+    padding-right: 28px;
+    line-height: 28px;
+}
+.user-list .user-interval {
+    margin-bottom: 25px;
+}
+/* user.html end */
+
+/* userInfo.html start */
+.user-info {
+    background: #fff;
+}
+.user-info header {
+    background: #fff;
+    text-align: center;
+}
+.user-info p {
+    padding-top: 19px;
+    padding-bottom: 19px;
+    height: 58px;
+}
+.user-info .user-icon {
+    width: 15.5vw;
+    height: 15.5vw;
+}
+.user-info h3 {
+    line-height: 21px;
+    font-size: 18px;
+    color: #585656;
+    padding-bottom: 13px;
+    font-weight: normal;
+}
+.user-info-main {
+    background: #f5f5f5;
+    padding-top: 2.2vw;
+}
+.user-info .weui-form-preview {
+    margin-bottom: 2.2vw;
+}
+.user-info .weui-form-preview__item {
+    line-height: 5vw;
+    padding: 2.8vw 0;
+    position: relative;
+    font-size: 14px;
+    font-size: 3.75vw;
+    color: #9B9B9B;
+}
+.user-info .weui-form-preview__item:after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 1px;
+    border-top: 1px solid #E9E8E8;
+    color: #e5e5e5;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    z-index: 2;
+}
+.user-info .weui-form-preview__item:nth-last-of-type(1):after {
+    border: none;
+}
+.user-info .weui-form-preview__bd {
+    padding: 0 4vw;
+}
+.user-info .weui-form-preview:after,
+.user-info .weui-form-preview:before {
+    border: none;
+}
+.user-info .weui-form-preview__value {
+    color: #585656;
+}
+.logout-btn-wrap {
+    padding: 68px 30px 20px;
+}
+.my-btn.weui-btn.log-out-btn {
+    background: #9B9B9B;
+}
+/* userInfo.html end */
+
+/* version.html start */
+.version {
+    background: #fff;
+}
+.version-content {
+    padding: 32px 16px;
+    font-size: 14px;
+    color: #585656;
+}
+.version-title {
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.version-list li {
+    list-style: none;
+    padding: 8px 0;
+    line-height: 22px;
+}
+/* version.html end */
+
+/* settings.html start */
+.settings .weui-cells {
+    margin-top: 0;
+    background: #f5f5f5;
+}
+.settings .weui-cell {
+    background: #fff;
+    margin-bottom: 2.2vw;
+    font-size: 3.75vw;
+    color: #585656;
+    line-height: 13.5vw;
+    padding: 0 4vw;
+}
+.settings .weui-cells:after,
+.settings .weui-cells:before {
+    border: none;
+}
+.settings .weui-cell:before {
+    border: none;
+}
+.settings .weui-cell_access .weui-cell__ft:after {
+    width: 8px;
+    height: 8px;
+    border-color: #D6D6D6;
+}
+/* settings.html end */
+
+/* changePhone.html start */
+.change-phone {
+    text-align: center;
+}
+.change-phone-logo {
+    height: 24vw;
+    line-height: 24vw;
+    padding-top: 9.6vw;
+}
+.change-phone-logo img {
+    width: 20vw;
+    height: 20vw;
+    vertical-align: middle;
+}
+.change-phone-phone {
+    font-size: 3.8vw;
+    margin-top: 6.6vw;
+    margin-bottom: 9px;
+}
+.change-phone-tip {
+    font-size: 3.8vw;
+    color: #CAC8C8;
+    margin-bottom: 8vw;
+}
+.change-phone-btn-wrap {
+    padding: 0 8vw;
+}
+/* changePhone.html end */
+
+/* setNewPhone.html start */
+.phone-input {
+    padding: 7.2vw 11.7vw 1.6vw;
+    margin-bottom: 10.2vw;
+}
+.phone-input .weui-label {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 9px;
+}
+.phone-input .weui-label img {
+    width: 25px;
+    height: 25px;
+}
+.phone-input .weui-input, .login .weui-cell__bd {
+    font-size: 3.8vw;
+    color: #4a4a4a;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+.phone-input.weui-cell:first-child:before {
+    display: inline-block;
+    border-color: #E9E8E8;
+    bottom: 0;
+    top: auto;
+    left: 11.7vw;
+    right: 11.7vw;
+}
+.my-btn.weui-btn_disabled {
+    background: #9B9B9B;
+}
+/* setNewPhone.html end */
+
+/* verifyPhone.html start */
+.change-phone .change-phone-btn-wrap {
+    margin-top: 44px;
+}
+.change-phone .login .weui-cell:before {
+    bottom: 0;
+    top: auto;
+}
+.change-phone .login .weui-cell:first-child:before {
+    display: inline-block;
+}
+.change-phone .login .weui-cell {
+    padding-bottom: 4px;
+}
+/* verifyPhone.html end */
+
+/* feedback.html start */
+.feedback .weui-cell.remark {
+    padding: 0;
+    margin: 28px 16px;
+}
+.feedback .weui-cell {
+    margin-top: -4px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.feedback .weui-cell__bd {
+    position: relative;
+    z-index: 9;
+}
+.feedback .weui-textarea {
+    height: 120px;
+    z-index: 9;
+    padding: 10px;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.feedback .remark:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #e5e5e5;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    z-index: 2;
+    border: 1px solid #D8D8D8;
+    height: 300px;
+    left: 0;
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+    width: 200%;
+}
+.feedback .weui-textarea-counter {
+    height: 30px;
+    line-height: 30px;
+    padding-right: 10px;
+}
+.weui-textarea-wrap {
+    z-index: 10;
+    padding: 1px;
+}
+.feedback .weui-cell:before {
+    border: none;
+}
+.feedback .upload-btn-wrap {
+    margin: 36px 30px;
+}
+.feedback .weui-uploader__input-box {
+    width: 53px;
+    height: 53px;
+}
+.feedback .weui-uploader__file {
+    width: 53px;
+    height: 53px;
+}
+/* feedback.html end */

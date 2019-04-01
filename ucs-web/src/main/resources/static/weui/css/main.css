@@ -1,0 +1,724 @@
+/* index.html start */
+.index {
+    background: #F5F5F5;
+}
+
+.ad {
+    height: 116px;
+    width: 100%;
+    background: #4a4a4a;
+}
+
+.notice {
+    line-height: 25px;
+    vertical-align: middle;
+    margin-bottom: 8px;
+    background: #fff;
+    color: #9b9b9b;
+    font-size: 14px;
+    padding-left: 17px;
+}
+
+.notice img {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.notice.weui-cell_access .weui-cell__ft:after {
+    border-color: #979797;
+}
+
+.index-content {
+    background: #fff;
+}
+
+.date-title {
+    padding: 11px 13px 13px 17px;
+    line-height: 22px;
+    font-size: 14px;
+    color: #9B9B9B;
+}
+
+.date-text {
+    color: #38BF8A;
+    font-size: 16px;
+    font-weight: bold;
+    padding-right: 11px;
+    border-right: 1px solid #C0BDBD;
+}
+
+.date-title .weui-cell__bd {
+    text-align: center;
+}
+
+.date-cell {
+    background: #f5f5f5;
+    width: 110px;
+    border-radius: 13px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.date-list {
+    padding-bottom: 3px;
+}
+
+.date-list .weui-cell {
+    margin-right: 12px;
+    margin-left: 12px;
+    margin-bottom: 12px;
+    padding: 18px 0;
+    font-size: 10px;
+    color: #9b9b9b;
+    position: relative;
+    box-shadow: 0 2px 4px 0 rgba(223, 225, 225, 0.5)
+}
+
+.date-list .weui-cell:before {
+    border-color: #EBE0E0;
+    left: 0;
+}
+
+.date-list .weui-cell:after {
+    content: " ";
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #EBE0E0;
+    color: #e5e5e5;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    left: 0;
+    z-index: 2;
+}
+
+.date-list .weui-cell:first-child:before {
+    display: inline-block;
+}
+
+.total-money {
+    color: #F8724F;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.money-kind {
+    line-height: 14px;
+    margin-bottom: 1px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.money {
+    color: #5B5A5B;
+    font-size: 12px;
+    line-height: 17px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.date-list .weui-cell__hd {
+    padding: 0 21px;
+}
+
+.date-list .weui-cell__bd {
+    position: relative;
+    padding-left: 26px;
+    box-sizing: border-box;
+    width: calc(100% - 125px);
+}
+
+.date-list .weui-cell__bd:after {
+    content: " ";
+    position: absolute;
+    top: 5px;
+    height: 70px;
+    width: 1px;
+    border-left: 1px solid #D8D6D6;
+    color: #D8D6D6;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleX(.5);
+    transform: scaleX(.5);
+    left: 0;
+    z-index: 2;
+}
+
+.date-list .equal-width:nth-of-type(1) {
+    padding-bottom: 9px;
+    position: relative;
+}
+
+.date-list .equal-width:nth-of-type(1):before {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    right: 26px;
+    height: 1px;
+    border-bottom: 1px solid #EBE0E0;
+    color: #e5e5e5;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    left: 0;
+    z-index: 2;
+}
+
+.date-list .equal-width:nth-of-type(2) {
+    padding-top: 9px;
+}
+
+.equal-width__item {
+    width: 50%;
+    overflow: hidden;
+    float: left;
+    box-sizing: border-box;
+}
+
+.equal-width__item:nth-of-type(2) {
+    padding-right: 26px;
+}
+
+.equal-width__item:nth-of-type(1) {
+    padding-right: 10px;
+}
+
+.border-left,
+.border-right {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    width: 2px;
+    color: #e5e5e5;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleX(.5);
+    transform: scaleX(.5);
+    z-index: 2;
+}
+
+.date-list .border-left {
+    top: 0;
+    left: 0;
+    height: 118px;
+    border-left: 1px solid #EBE0E0;
+}
+
+.date-list .border-right {
+    top: 0;
+    right: -3px;
+    height: 118px;
+    border-left: 1px solid #EBE0E0;
+}
+
+.end.date-label {
+    background-color: #FBA747;
+}
+
+.date-cell .date-pick {
+    position: absolute;
+    width: 106px;
+    top: 2px;
+    left: 2px;
+    height: 18px;
+    z-index: 9;
+    opacity: 0;
+    border-radius: 13px;
+}
+
+.date-cell input[type="date"] {
+    border: none;
+    -webkit-appearance: none;
+    background: none;
+}
+
+.date-cell input[type="date"]:focus {
+    outline-offset: 0;
+    outline: none;
+}
+
+/* index.html end */
+
+/* cachrec.html start */
+.weui-navbar__item {
+    font-size: 16px;
+    color: #848284;
+    line-height: 22px;
+    padding: 9px 0 13px;
+    background: #fff;
+    position: relative;
+}
+
+.weui-navbar__item:after {
+    border: none;
+}
+
+.weui-navbar__item.weui-bar__item_on {
+    color: #F5A623;
+    background: #fff;
+}
+
+.weui-navbar__item.weui-bar__item_on:after {
+    width: 100%;
+    bottom: -2px;
+    top: auto;
+    border-radius: 4px;
+    height: 4px;
+    background: #F5A623;
+    border: 0;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    z-index: 10;
+}
+
+.weui-navbar__item:active {
+    background-color: #fff;
+}
+
+.weui-navbar__item:last-child:after {
+    display: inline-block;
+}
+
+.weui-navbar + .weui-tab__panel {
+    padding-top: 44px;
+}
+
+.weui-tab__panel_item {
+    height: 100%;
+}
+
+.tab-item {
+    height: 100%;
+    display: none;
+}
+
+.tab-item.tab-item-on {
+    display: block;
+}
+
+.cashrec-item {
+    background: #fff;
+    padding: 0;
+    line-height: 20px;
+}
+
+.cashrec-item .weui-cells {
+    padding-top: 3px;
+}
+
+.cashrec-item .weui-cells__title {
+    color: #5C595C;
+    line-height: 17px;
+    padding: 10px 0 8px 16px;
+    margin-top: 8px;
+}
+
+.cashrec-item .weui-cell {
+    font-size: 14px;
+    color: #9B999B;
+    padding: 2px 14px 2px 14px;
+}
+
+.cashrec-item .weui-cell:before {
+    border: none;
+}
+
+.cashrec-item .data-title {
+    color: #595759;
+}
+
+.cashrec-item .weui-cell + .data-title {
+    margin-top: 3px;
+}
+
+.cashrec-item .data-warning {
+    color: #FB585B;
+    margin-top: 4px;
+    margin-bottom: 3px;
+}
+
+.my-btn-mini {
+    color: #fff;
+    background: #33C38E;
+    line-height: 28px;
+    height: 28px;
+    width: 104px;
+    text-align: center;
+    padding: 0;
+    font-size: 16px;
+    margin: 8px 1px 8px 0;
+    border-radius: 14px;
+}
+
+.my-btn-mini.weui-btn:after {
+    border: none;
+}
+
+/* cachrec.html end */
+
+
+.detail h3 {
+    font-size: 30px;
+    color: #fff;
+    line-height: 36px;
+    margin-bottom: 11px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.detail h5 {
+    color: #fff;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+    font-weight: normal;
+}
+.detail-info {
+    margin-top: 6px;
+}
+.detail-info .weui-media-box__hd {
+    width: 90px;
+    color: #454345;
+    font-size: 15px;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.detail-info .weui-media-box__bd {
+    font-size: 15px;
+    color: #605F60;
+    line-height: 17px;
+}
+
+.detail-info .weui-media-box {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.detail-info .weui-media-box:before {
+    border: none;
+}
+
+.money-detail {
+    padding-bottom: 6px;
+}
+.money-detail .weui-cell.data-title {
+    margin-top: 8px;
+    color: #454345;
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+.money-detail .weui-cell {
+    color: #605F60;
+    font-size: 13px;
+    line-height: 25px;
+    padding: 0 16px;
+}
+
+.money-detail .weui-cell:before {
+    border: none;
+}
+.money-detail.weui-cells:after,
+.money-detail.weui-cells:before {
+    left: 16px;
+}
+.money-detail .weui-cell__ft {
+    color: #605F60;
+}
+.money-result {
+    margin-top: 0;
+    padding-top: 10px;
+}
+.money-result.weui-cells:after,
+.money-result.weui-cells:before {
+    border: none;
+}
+.money-result .weui-cell:before {
+    border: none;
+}
+.money-result .weui-cell {
+    line-height: 28px;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 14px;
+}
+.money-result .weui-cell__ft {
+    color: #454345;
+}
+.money-result .data-warning {
+    color: #FB6063;
+}
+.money-result .data-warning .weui-cell__ft {
+    color: #FB6063;
+}
+.btn-wrap {
+    margin-top: 68px;
+    padding-bottom: 40px;
+}
+/* unpaidDetail.html end */
+
+/* payMethod.html start */
+.pay-method-title,
+.pay-in-bank-title {
+    font-size: 14px;
+    color: #999;
+    padding-left: 16px;
+    background: #f5f5f5;
+    height: 44px;
+    line-height: 44px;
+}
+
+.pay-btn-wrap {
+    padding: 0 30px;
+    margin-top: 46px;
+    margin-bottom: 60px;
+}
+
+.pay-method .weui-grids {
+    padding: 34px 5px 0 5px;
+}
+
+.pay-method .weui-grid {
+    padding: 0 0.4em;
+    margin-bottom: 24px;
+}
+
+.pay-method .weui-grid__icon {
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    vertical-align: middle;
+}
+
+.pay-method .weui-media-box {
+    width: 100%;
+    height: 42px;
+    padding: 0;
+}
+
+.pay-method .weui-media-box:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border: 1px solid #E4E1E1;
+    height: 84px;
+    color: #e5e5e5;
+    width: 200%;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+}
+
+.pay-method .weui-media-box_appmsg .weui-media-box__hd {
+    margin: 0 1vw 0 1.5vw;
+    width: 30px;
+    height: 30px;
+}
+
+.pay-method .weui-media-box_appmsg .weui-media-box__bd {
+    font-size: 3.5vw;
+}
+
+.pay-method .weui-grid:after {
+    border: none;
+}
+
+.pay-method .weui-grid:after,
+.pay-method .weui-grid:before {
+    border: none;
+}
+
+.active .weui-media-box:after {
+    border-color: #F5A623;
+}
+
+.active .weui-media-box:before {
+    content: " ";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid #F5A623;
+    border-left: 20px solid transparent;
+    border-top: none;
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+    top: auto;
+    left: auto;
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+.pay-method .weui-grid:active {
+    background: none;
+}
+/* payMethod.html end */
+
+/* payIn*.html start */
+
+.QRCode-wrap {
+    background: #fff;
+    text-align: center;
+    border-radius: 7px;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-top: 40px;
+    box-shadow: 0px 2px 4px 2px rgba(169,164,164,0.5)
+}
+.QRCode-image img {
+    width: 60vw;
+    height: 60vw;
+}
+.QRCode-info {
+    color: #9B9B9B;
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 20px;
+}
+.QRCode-money {
+    color: #FC7E81;
+    font-size: 30px;
+    line-height: 36px;
+    margin-top: 26px;
+}
+.QRCode-address {
+    color: #434143;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 9px;
+    margin-bottom: 24px;
+}
+.QRCode-code {
+    color: #434143;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 6px;
+}
+.QRCode-copyright {
+    line-height: 22px;
+    vertical-align: middle;
+    margin-top: 18px;
+    padding-bottom: 36px;
+}
+.QRCode-copyright span {
+    background-size: 39px 22px;
+    padding-left: 48px;
+}
+
+/* payIn*.html end */
+
+/* payInBank.html start */
+.pay-info-input .weui-cells {
+    margin-top: 0;
+}
+.pay-info-input .weui-cells:before {
+    border: none;
+}
+.pay-info-input .weui-cell {
+    line-height: 20px;
+    font-size: 14px;
+}
+.pay-info-input .weui-cell__bd {
+    text-align: right;
+    color: #424242;
+    z-index: 3;
+}
+.pay-info-input .weui-cell__hd {
+
+    color: #7D7C7C;
+}
+.pay-info-input .weui-input {
+    text-align: right;
+}
+.pay-info-input .weui-cells__title {
+    color: #7D7C7C;
+    line-height: 18px;
+    margin-top: 22px;
+    margin-bottom: 2px;
+}
+.pay-info-input .weui-textarea {
+    height: 86px;
+    box-sizing: border-box;
+    margin: 12px;
+    width: calc(100% - 24px);
+    cursor: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+
+.remark-content.weui-cell:before{
+    border: 1px solid #D8D8D8;
+    height: 200px;
+    left: 0;
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+    width: 200%;
+}
+.remark-content.weui-cell {
+    padding: 0;
+    margin: 11px 16px;
+}
+.pay-info-input .weui-cells:after {
+    left: 16px;
+}
+.pay-info-input .weui-cells__title.upload-title {
+    margin-top: 12px;
+}
+.upload-info {
+    color: #CAC7C7;
+    font-size: 11px;
+    line-height: 18px;
+    margin: 10px 16px 34px;
+}
+.upload-btn-wrap {
+    margin: 0 30px;
+    height: 68px;
+}
+.form-required {
+    position: relative;
+}
+.form-required:after {
+    color: #FB585B;
+    content: '*';
+    position: absolute;
+    left: 8px;
+    top: -2px;
+    font-size: 18px;
+}
+.upload-title + .weui-cell:before {
+    border: none;
+}
+
+.weui-uploader__input-box {
+    width: 53px;
+    height: 53px;
+}
+
+.weui-uploader__file {
+    width: 54px;
+    height: 54px;
+}
+
+.weui-gallery {
+    height: 100%;
+}
+/* payInBank.html end */
