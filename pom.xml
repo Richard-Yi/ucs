@@ -71,7 +71,7 @@
         <objenesis.version>2.6</objenesis.version>
         <kryo.version>4.0.2</kryo.version>
         <mongodb.version>3.8.1</mongodb.version>
-        <fastjson.version>1.2.51</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
 
         <!-- 缓存 -->
         <redisson.version>3.7.5</redisson.version>
